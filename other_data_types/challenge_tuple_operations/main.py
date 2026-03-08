@@ -11,16 +11,16 @@ print("First Banana Index:", banana_index)
 
 # Check Apples
 if apple_count < 5:
-    print("Apples need to be restocked")
+    print("Apples need to be restocked.")
 
 else:
-    print("Apples are sufficiently stocked")
+    print("Apples are sufficiently stocked.")
 
 # Grape Count
 grape_count = shelf.count("grapes")
 
 if grape_count == 1:
-    print("Grapes need to be restocked")
+    print("Grapes need to be restocked.")
 
 else: print("Grapes are sufficiently stocked")
 
