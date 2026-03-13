@@ -1,21 +1,19 @@
-# Counting letter frequencies in a word
-freq = {}
-for ch in "abracadabra":
-    freq[ch] = freq.get(ch, 0) + 1
-print(freq)  # each letter mapped to its count
-
-# Storing user data by username
-users = {
-    "alice": {"email": "a@example.com", "role": "admin"},
-    "bob":   {"email": "b@example.com", "role": "user"},
-}
-print(users["alice"]["role"])  # quick, readable access
-
-# Dictionary of suppliers by name
-suppliers_by_name = {
-    "Fresh Farms": {"id": 101, "category": "Produce"},
-    "Green Gardens": {"id": 102, "category": "Herbs"}
+# Define inventory
+grocery_inventory = {
+    "Milk": (113, "Dairy"),
+    "Eggs": (116, "Dairy"),
+    "Bread": (117, "Bakery"),
+    "Apples": (141, "Produce"),
 }
 
-# Direct access by name
-print(suppliers_by_name["Green Gardens"]["category"])
+# Retrieve bread details
+bread_details = grocery_inventory["Bread"]
+print("Details of Bread:", bread_details)
+
+# Add cookies
+grocery_inventory["Cookies"] = (143, "Bakery")
+print("Inventory after adding Cookies:", grocery_inventory)
+
+#remove eggs
+grocery_inventory.pop("Eggs")
+print("Inventory after removing Eggs:", grocery_inventory)
